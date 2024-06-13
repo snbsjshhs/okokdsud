@@ -134,4 +134,7 @@ async def channels(ctx):
     await guild.create_text_channel('HACKED BY JALAM')
 
 ##BOT TOKEN##
-bot.run("OTI0MzYxMzM1NTk5NDE1MzI2.GeGxLO.fDWVt_4HR6HHmB0-JJyW-PnVQSUJWcxT-Q794Q", reconnect=True)
+import os
+
+TOKEN = os.environ['TOKEN']
+bot.run(TOKEN, reconnect=True)
